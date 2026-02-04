@@ -1,0 +1,123 @@
+/**
+ * Text Image Block Styles
+ *
+ * Frontend styles for the text-image block.
+ */
+
+.sdcmps-text-image {
+	margin: 0;
+	padding: 0;
+}
+
+.sdcmps-text-image__container {
+	display: flex;
+	gap: 40px;
+	align-items: flex-start;
+}
+
+.sdcmps-text-image__text {
+	min-width: 0;
+}
+
+.sdcmps-text-image__text-wrapper {
+	/* Wrapper for lead text and content to apply text alignment */
+	display: block;
+}
+
+.sdcmps-text-image__text-wrapper--align-left {
+	text-align: left;
+}
+
+.sdcmps-text-image__text-wrapper--align-center {
+	text-align: center;
+}
+
+.sdcmps-text-image__text-wrapper--align-right {
+	text-align: right;
+}
+
+.sdcmps-text-image__lead {
+	font-size: 0.875rem;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	color: #666;
+}
+
+.sdcmps-text-image__content {
+	/* InnerBlocks content styling - inherits text alignment from parent wrapper */
+	display: block;
+}
+
+.sdcmps-text-image__image {
+	min-width: 0;
+	position: relative;
+}
+
+.sdcmps-text-image__image img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Cover mode for image */
+.sdcmps-text-image__image--cover {
+	overflow: hidden;
+	position: relative;
+	min-height: 400px; /* Default height for desktop */
+}
+
+.sdcmps-text-image__image--cover img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Image position: Right (reverse order on desktop) */
+.sdcmps-text-image--position-right .sdcmps-text-image__container {
+	flex-direction: row-reverse;
+}
+
+/* Wide alignment */
+.sdcmps-text-image.alignwide {
+	max-width: 1400px;
+}
+
+/* Full alignment */
+.sdcmps-text-image.alignfull {
+	max-width: 100%;
+}
+
+/* Tablet and Mobile: Stack vertically, image always on top */
+@media (max-width: 768px) {
+	.sdcmps-text-image__container {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.sdcmps-text-image__text,
+	.sdcmps-text-image__image {
+		flex: 0 0 100% !important;
+		width: 100% !important;
+	}
+
+	/* Ensure image is always on top regardless of position setting */
+	.sdcmps-text-image--position-right .sdcmps-text-image__container {
+		flex-direction: column;
+	}
+
+	/* Cover mode on mobile - image should fill available width */
+	.sdcmps-text-image__image--cover {
+		width: 100%;
+		height: 300px; /* Set a reasonable height for mobile */
+	}
+
+	.sdcmps-text-image__image--cover img {
+		width: 100%;
+		height: 100%;
+	}
+}
+

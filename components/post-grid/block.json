@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "seed-components/post-grid",
+	"title": "Post Grid",
+	"description": "Display posts in a grid layout with customizable columns.",
+	"style": ["file:./style.css"],
+	"category": "seed-components",
+	"icon": "grid-view",
+	"keywords": [
+		"posts",
+		"grid",
+		"blog",
+		"archive"
+	],
+	"textdomain": "seed-components",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "template.php",
+		"validate": false
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"html": false
+	}
+}
+

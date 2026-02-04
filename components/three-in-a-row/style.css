@@ -1,0 +1,57 @@
+/**
+ * Three in a Row Block Styles
+ */
+
+.sdcmps-three-in-a-row {
+	width: 100%;
+}
+
+.sdcmps-three-in-a-row__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.sdcmps-three-in-a-row__title {
+	margin-bottom: 20px;
+}
+
+.sdcmps-three-in-a-row__text {
+	margin-bottom: 40px;
+}
+
+.sdcmps-three-in-a-row__items {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+}
+
+@media (min-width: 768px) {
+	.sdcmps-three-in-a-row__items {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.sdcmps-three-in-a-row__item {
+	text-align: center;
+}
+
+.sdcmps-three-in-a-row__icon {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto 20px;
+	background-color: #f0f0f0;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sdcmps-three-in-a-row__item-title {
+	margin-bottom: 15px;
+}
+
+.sdcmps-three-in-a-row__item-text {
+	margin-bottom: 0;
+}
+

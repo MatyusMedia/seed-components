@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "seed-components/three-in-a-row",
+	"title": "Three in a Row",
+	"description": "A component with title, text, and three items in a row with icons.",
+	"style": ["file:./style.css"],
+	"category": "seed-components",
+	"icon": "grid-view",
+	"keywords": [
+		"three",
+		"row",
+		"items",
+		"icons"
+	],
+	"textdomain": "seed-components",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "template.php",
+		"validate": false
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"html": false
+	}
+}
+

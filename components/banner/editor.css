@@ -1,0 +1,48 @@
+/**
+ * Banner Block Editor Styles
+ *
+ * Styles for the banner block in the block editor.
+ */
+
+.sdcmps-banner {
+	padding: 20px;
+	border: 1px dashed #ccc;
+	background-color: #f9f9f9;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.sdcmps-banner__title {
+	margin-top: 0;
+}
+
+/* Height classes for editor */
+.sdcmps-banner--height-small {
+	min-height: 180px;
+}
+
+.sdcmps-banner--height-medium {
+	min-height: 250px;
+}
+
+.sdcmps-banner--height-large {
+	min-height: 300px;
+}
+
+/* Responsive height classes for editor */
+@media (min-width: 768px) {
+	.sdcmps-banner--height-small {
+		min-height: 300px;
+	}
+
+	.sdcmps-banner--height-medium {
+		min-height: 400px;
+	}
+
+	.sdcmps-banner--height-large {
+		min-height: 500px;
+	}
+}
+

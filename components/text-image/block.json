@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "seed-components/text-image",
+	"title": "Text Image",
+	"description": "A flexible two-column layout with text and image, supporting various column width ratios.",
+	"style": ["file:./style.css"],
+	"category": "seed-components",
+	"icon": "format-image",
+	"keywords": [
+		"text",
+		"image",
+		"columns",
+		"layout"
+	],
+	"textdomain": "seed-components",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "template.php",
+		"validate": false
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"html": false,
+		"innerBlocks": true
+	}
+}
+
